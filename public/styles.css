@@ -84,8 +84,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(images/background-image/background.jpeg) center no-repeat fixed;
-  background: url(images/background-image/background.jpeg) cover no-repeat fixed;
+  background: url(images/background-image/background.jpeg) center/cover no-repeat fixed;
 }
 
 .glass-card {
@@ -330,8 +329,6 @@ nav {
 
 #codeskills ol li {
   counter-increment: stepnr;
-  --borderS: 1.5rem;
-  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
