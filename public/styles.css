@@ -84,7 +84,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(images/background-image/background.jpeg) center/cover no-repeat fixed;
+  background-image: url(images/background-image/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  #header {
+    background-position: center;
+    background-attachment: fixed;
+  }
 }
 
 .glass-card {
