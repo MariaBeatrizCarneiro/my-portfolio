@@ -415,17 +415,16 @@ nav {
 }
 
 #education .container {
-  min-height:100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1f1f47;
+  position: relative;
 }
 
 #education .wrapper{
   width:100%;
   height:100%;
-  min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -454,7 +453,18 @@ nav {
   background: #fa709a;
 }
 
-#education h1, h3, h4{
+#education h1 {
+  font-size: 3.052em;
+  margin-bottom: 60px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#education h2 {
+  font-size: 2em;
+}
+
+#education h2, h3, h4{
   color: whitesmoke;
   text-align: center;
   margin-bottom: 20px;
@@ -462,16 +472,9 @@ nav {
 
 #education {
   background: #1f1f47;
+  padding: 200px;
 }
 
-#education .container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 
 #education .blob {
   position: absolute;
