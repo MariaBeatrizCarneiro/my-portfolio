@@ -84,7 +84,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(images/background-image/background.jpeg) center/cover no-repeat fixed;
+  background: url(images/background-image/background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .glass-card {
