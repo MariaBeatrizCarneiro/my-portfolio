@@ -1,5 +1,5 @@
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-}
-
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('show');
+  }
+  

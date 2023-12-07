@@ -1,104 +1,61 @@
-:root {
-  --navy-blue: #1f1f47;
-  --lightpink: pink;
-  --hotpink: hotpink;
-  --pink: #ea124f;
-   
+body {
+  margin: 0;
 }
-
 /*-------------------------
             Nav
 --------------------------*/
-#nav {
-  z-index: 10000;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+nav {
   background-color: #1f1f47;
-  color: white;
   padding: 15px;
-}
-
-.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.toggle-button {
-  background: none;
-  border: none;
+.menu-toggle {
   cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  display: none;
 }
 
-.toggle-button img {
-  width: 30px; /* Adjust the size of the menu icon */
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    display: none;
-}
-
-.nav-links.show {
+.nav-list {
+  list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links li {
-    list-style: none;
-    margin: 10px 0;
+.nav-list li {
+  margin: 0 15px;
 }
 
-.nav-links li a {
-    position: relative;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
+.nav-list a {
+  text-decoration: none;
+  color: white;
 }
 
-.nav-links li a:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    width: 0%;
-    background: hotpink;
-    border-radius: 12px;
-    transition: all 0.4s ease;
-}
-
-.nav-links li a:hover:before {
-    width: 100%;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
+@media only screen and (max-width: 600px) {
+  .menu-toggle {
+    display: block;
   }
 
-  .nav-links.show {
+  .nav-list {
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust the top position as needed */
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: #1f1f47;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
   }
 }
 

@@ -13,23 +13,30 @@
     <!-------------------------
               Nav Bar
     --------------------------->
-
-    <nav id="nav">
-      <div class="nav-header">
-          <button class="toggle-button" onclick="toggleMenu()">
-              <img src="images/menu-image/menu-icon3.png" alt="Menu">
-          </button>
-      </div>
-      <ul class="nav-links">
-          <li><a href="#header">Home</a></li>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+      <ul class="nav-list">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#codeskills">Code Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#section10">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--
+    <nav>
+      <ul>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#codeskills">Code Skills</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#section10">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="menu-icon" onclick="toggleMenu()">☰ Menu</li>
       </ul>
     </nav>
-
+    -->
     <!-------------------------
               Header
     --------------------------->
