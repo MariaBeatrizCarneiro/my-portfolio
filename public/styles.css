@@ -305,16 +305,33 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-	.grid {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(6, minmax(auto, 300px));
-		overflow-y: scroll;
+	#about .grid {
+		grid-template-columns: repeat 1fr;
+		grid-template-rows: repeat(11, auto);
 	}
 
-	.item1 {
-		grid-area: 1 / 1 / 2 / 3;
+	#about .item1 {
+		grid-area: auto;
+    order: 1;
 	}
-	.card {
+
+  #about .item2,
+  #about .item3,
+  #about .item4,
+  #about .item5,
+  #about .item6,
+  #about .item7,
+  #about .item8,
+  #about .item9,
+  #about .item10,
+  #about .item11 {
+    grid-area: auto;
+    order: 2;
+  }
+
+	#about .card {
+    width: 100%;
+    margin: 10px 0;
 		grid-area: auto;
 		text-align: left;
 		
