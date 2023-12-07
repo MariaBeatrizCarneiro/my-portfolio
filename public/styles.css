@@ -646,101 +646,59 @@ nav {
       Contact Form
 --------------------------*/
 
-#contact * {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 #contact {
   padding-top: 150px;
   padding-bottom: 150px;
   background-color: #1f1f47;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#contact .contact-box {
-  margin: 80px 50px;
-  display: flex;
-
-}
-
-#contact .contact-links {
-  background-color: #7a3e73;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 25px;
-}
-
-#contact .contact-form-wrapper {
-  background-color: #7a3e73;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 25px;
+  color: white;
+  text-align: center;
 }
 
 #contact h1 {
-  color: white;
-  text-align: center;
-  margin-top: 25px;
+  font-size: 3.052em;
+  margin-bottom: 60px;
+  color: whitesmoke;
 }
 
-#contact .links {
-  text-align: center;
-  justify-content: center;
-  padding-top: 80px;
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#contact .link {
-  margin: 10px;
+#contact .social-buttons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
-#contact img {
-  width: 45px;
-  height: 45px;
-  user-select: none;
+#contact form {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 50px;
+  padding: 0 25px;
+  box-sizing: border-box;
 }
 
-#contact img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-#contact img:active {
-  transform: scale(1.1, 1.1);
-}
-
-#contact .form-item {
-  position: relative;
+#contact label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 #contact input, textarea {
   width: 100%;
-  outline: 0;
-  border: 1px solid #7a3e73;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
   border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 12px;
+  border: none;
+  cursor: pointer;
 }
 
 #contact .submit-btn {
-  background-color: #ff68b4;
   color: white;
-  display: block;
-  margin: 20px auto;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-#contact .submit-btn:hover {
-  transform: scale(1.1, 1.1);
-}
-
-#contact .submit-btn:active {
-  transform: scale(1.1, 1.1);
+  background: hotpink;
 }
 
 /*-------------------------
