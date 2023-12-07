@@ -440,7 +440,7 @@ nav {
   position: relative;
   width:400px;
   height:400px;
-  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.8);
   border-radius:25px;
   margin:30px;
   display: flex;
@@ -451,6 +451,7 @@ nav {
   backdrop-filter: blur(6px);
   transform-style: preserve-3d;
   transform: perspective(800px);
+  background: #fa709a;
 }
 
 #education h1, h3, h4{
@@ -476,15 +477,12 @@ nav {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: linear-gradient(
-    180deg,
-    pink,
-    pink
-  );
+  background: linear-gradient( 180deg,pink,pink);
   mix-blend-mode: color-dodge;
   -webkit-animation: move 25s infinite alternate;
           animation: move 25s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+  opacity: 0.3;
 }
 
 #education .blob:hover {
@@ -497,32 +495,39 @@ nav {
     inset 100px 100px 0 0px #fa709a,
     inset 200px 200px 0 0px #784ba8,
     inset 300px 300px 0 0px #2b86c5;
+    opacity: 0.5;
 }
 
 @-webkit-keyframes move {
   from {
-    transform: translate(-100px, -50px) rotate(-90deg);
+    transform: translate(-10vw, -5vw) rotate(-90deg);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
   }
 
   to {
-    transform: translate(500px, 100px) rotate(-10deg);
+    transform: translate(25vw, 5vw) rotate(-10deg);
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
 
 @keyframes move {
   from {
-    transform: translate(-500px, -50px) rotate(-90deg);
+    transform: translate(-25vw, -5vw) rotate(-90deg);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
   }
 
   to {
-    transform: translate(500px, 100px) rotate(-10deg);
+    transform: translate(25vw, 5vw) rotate(-10deg);
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #education .blob {
+    width: 40vw; /* Adjust the size for smaller screens */
+    height: 40vw; /* Adjust the size for smaller screens */
+  }
+}
 
 /*-------------------------
           Projects
