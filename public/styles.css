@@ -95,6 +95,10 @@ nav {
     background-position: center;
     background-attachment: fixed;
   }
+
+  .glass-card {
+    backdrop-filter: blur(15px);
+  }
 }
 
 .glass-card {
