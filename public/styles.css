@@ -667,10 +667,12 @@ nav {
 }
 
 #contact .social-buttons img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+  width: 70px;
+  height: 70px;
+  margin: 0 20px;
   cursor: pointer;
+  background: white;
+  border-radius: 40px;
 }
 
 #contact form {
@@ -711,4 +713,55 @@ nav {
   padding: 25px;
   color: white;
   text-align: center;
+}
+
+
+
+
+/*============================
+  Scroll-Triggered Animation
+==============================*/
+
+.reveal{
+  position: relative;
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal-from-left {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-from-left.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal-from-right {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal-from-right.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.pop {
+  transition: transform 0.3s ease-in-out;
+}
+
+.pop:hover {
+  transform: scale(1.3);
 }
