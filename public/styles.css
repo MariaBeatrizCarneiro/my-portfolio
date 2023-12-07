@@ -75,11 +75,11 @@ nav {
 --------------------------*/
 
 #header {
+  height: 91.5vh;
   padding: 25px 25px 25px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background: url(images/background-image/background.jpeg) center/cover no-repeat fixed;
 }
 
