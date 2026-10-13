@@ -332,7 +332,9 @@ function setupCvDropdown() {
         await generateCv(language);
       } catch (error) {
         console.error('CV generation failed', { language, error });
-        alert('Não foi possível gerar o CV. Tenta novamente mais tarde.');
+        alert(document.documentElement.lang === 'en'
+          ? 'Could not generate the CV. Please try again later.'
+          : 'Não foi possível gerar o CV. Tenta novamente mais tarde.');
       }
     });
   });

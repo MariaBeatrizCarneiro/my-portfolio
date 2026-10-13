@@ -35,18 +35,25 @@
 
 
     <!-- Nav Bar -->
-    
-    <nav>
-      <div class="menu-toggle">☰ Menu</div>
-      <ul class="nav-list">
-        <li><a href="#header">Início</a></li>
-        <li><a href="#about">Sobre Mim</a></li>
-        <li><a href="#experience">Experiência</a></li>
-        <li><a href="#codeskills">Competências</a></li>
-        <li><a href="#education">Formação</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#contact">Contactos</a></li>
+
+    <nav class="nav" aria-label="Principal" data-i18n-attr="aria-label:nav.label">
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#about" data-i18n="nav.about">Sobre mim</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
+        <li><a href="#codeskills" data-i18n="nav.skills">Competências</a></li>
+        <li><a href="#education" data-i18n="nav.education">Formação</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contactos</a></li>
       </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Língua / Language">
+          <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="nav-burger" aria-expanded="false" aria-controls="nav-list" aria-label="Menu" data-i18n-attr="aria-label:nav.menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
 
 
@@ -78,20 +85,20 @@
 
     <section id="about" class="section">
       <div class="container">
-        <div class="section-head"><h2 class="pill">Sobre mim</h2></div>
+        <div class="section-head"><h2 class="pill" data-i18n="about.title">Sobre mim</h2></div>
         <div class="about-layout">
           <div class="about-text">
-            <p>Sou a Beatriz, tenho <span id="age">23</span> anos e atualmente divido o meu tempo entre três papéis: CEO &amp; Founder da Bitwise Lab, Formadora de Programação na Fundação Aga Khan e estudante de Engenharia Informática e Computação na Faculdade de Engenharia da Universidade do Porto.</p>
+            <p data-i18n="about.text">Sou a Beatriz, tenho <span id="age">23</span> anos e atualmente divido o meu tempo entre três papéis: CEO &amp; Founder da Bitwise Lab, Formadora de Programação na Fundação Aga Khan e estudante de Engenharia Informática e Computação na Faculdade de Engenharia da Universidade do Porto.</p>
             <ul class="chips chips-light">
-              <li>Estudante entusiasta</li>
-              <li>Apaixonada por tecnologia</li>
-              <li>Compromisso com excelência</li>
-              <li>Aprendiz incansável</li>
+              <li data-i18n="about.chip1">Estudante entusiasta</li>
+              <li data-i18n="about.chip2">Apaixonada por tecnologia</li>
+              <li data-i18n="about.chip3">Compromisso com excelência</li>
+              <li data-i18n="about.chip4">Aprendiz incansável</li>
             </ul>
           </div>
           <dl class="facts">
-            <div><dt>Localização</dt><dd>Porto, Portugal</dd></div>
-            <div><dt>Línguas</dt><dd>Português e inglês (fluente)</dd></div>
+            <div><dt data-i18n="about.location">Localização</dt><dd>Porto, Portugal</dd></div>
+            <div><dt data-i18n="about.languages">Línguas</dt><dd data-i18n="about.languagesValue">Português e inglês (fluente)</dd></div>
           </dl>
         </div>
       </div>
@@ -102,31 +109,31 @@
 
     <section id="experience" class="section">
       <div class="container">
-        <div class="section-head"><h2 class="pill">Experiência</h2></div>
+        <div class="section-head"><h2 class="pill" data-i18n="experience.title">Experiência</h2></div>
         <ol class="timeline">
           <li class="timeline-item">
-            <span class="timeline-date">2024 - Presente</span>
+            <span class="timeline-date" data-i18n="experience.bitwise.date">2024 - Presente</span>
             <div class="timeline-card">
               <div class="timeline-head">
                 <div class="timeline-text">
                   <h3>CEO &amp; Founder</h3>
                   <p class="org"><a href="https://bitwiselab.net" target="_blank" rel="noopener">Bitwise Lab</a> · <a href="https://boardmeeting.app" target="_blank" rel="noopener">BoardMeeting.app</a></p>
-                  <p>Empresa de desenvolvimento de software especializada em aplicações móveis e web.<br>Desenvolvemos a BoardMeeting, uma aplicação de gestão de reuniões com IA e Blockchain.</p>
+                  <p data-i18n="experience.bitwise.text">Empresa de desenvolvimento de software especializada em aplicações móveis e web.<br>Desenvolvemos a BoardMeeting, uma aplicação de gestão de reuniões com IA e Blockchain.</p>
                 </div>
-                <a class="timeline-logo-link" href="https://bitwiselab.net" target="_blank" rel="noopener" aria-label="Bitwise Lab (bitwiselab.net)"><img class="timeline-logo" src="images/logos/bitwise-lab.png" alt="Logótipo da Bitwise Lab"></a>
+                <a class="timeline-logo-link" href="https://bitwiselab.net" target="_blank" rel="noopener" aria-label="Bitwise Lab (bitwiselab.net)"><img class="timeline-logo" src="images/logos/bitwise-lab.png" alt="Logótipo da Bitwise Lab" data-i18n-attr="alt:experience.bitwise.logoAlt"></a>
               </div>
             </div>
           </li>
           <li class="timeline-item">
-            <span class="timeline-date">2025 - Presente</span>
+            <span class="timeline-date" data-i18n="experience.akf.date">2025 - Presente</span>
             <div class="timeline-card">
               <div class="timeline-head">
                 <div class="timeline-text">
-                  <h3>Formadora de Programação</h3>
-                  <p class="org"><a href="https://the.akdn/pt/recursos-e-media/recursos/publica%C3%A7%C3%A3o/funda%C3%A7%C3%A3o-aga-khan-portugal" target="_blank" rel="noopener">Fundação Aga Khan Portugal</a> · <a href="https://bytes4future.pt" target="_blank" rel="noopener">Projeto Bytes4Future</a></p>
-                  <p>Formadora de cursos como Full Stack Developer e Data Analyst, entre outros,<br>a ajudar pessoas a iniciarem a sua carreira na tecnologia.</p>
+                  <h3 data-i18n="experience.akf.role">Formadora de Programação</h3>
+                  <p class="org"><a href="https://the.akdn/pt/recursos-e-media/recursos/publica%C3%A7%C3%A3o/funda%C3%A7%C3%A3o-aga-khan-portugal" target="_blank" rel="noopener" data-i18n="experience.akf.org">Fundação Aga Khan Portugal</a> · <a href="https://bytes4future.pt" target="_blank" rel="noopener" data-i18n="experience.akf.project">Projeto Bytes4Future</a></p>
+                  <p data-i18n="experience.akf.text">Formadora de cursos como Full Stack Developer e Data Analyst, entre outros,<br>a ajudar pessoas a iniciarem a sua carreira na tecnologia.</p>
                 </div>
-                <a class="timeline-logo-link" href="https://the.akdn/pt/recursos-e-media/recursos/publica%C3%A7%C3%A3o/funda%C3%A7%C3%A3o-aga-khan-portugal" target="_blank" rel="noopener" aria-label="Fundação Aga Khan Portugal"><img class="timeline-logo timeline-logo-tall" src="images/logos/fundacao-aga-khan.svg" alt="Logótipo da Fundação Aga Khan Portugal"></a>
+                <a class="timeline-logo-link" href="https://the.akdn/pt/recursos-e-media/recursos/publica%C3%A7%C3%A3o/funda%C3%A7%C3%A3o-aga-khan-portugal" target="_blank" rel="noopener" aria-label="Fundação Aga Khan Portugal" data-i18n-attr="aria-label:experience.akf.org"><img class="timeline-logo timeline-logo-tall" src="images/logos/fundacao-aga-khan.svg" alt="Logótipo da Fundação Aga Khan Portugal" data-i18n-attr="alt:experience.akf.logoAlt"></a>
               </div>
             </div>
           </li>
@@ -139,10 +146,10 @@
 
     <section id="codeskills" class="section section-dark">
       <div class="container">
-        <h2 class="skills-title">Competências em Programação</h2>
+        <h2 class="skills-title" data-i18n="skills.title">Competências em Programação</h2>
         <div class="skill-groups">
           <div class="skill-group">
-            <h3>Linguagens</h3>
+            <h3 data-i18n="skills.languages">Linguagens</h3>
             <ul class="chips">
               <li>C</li><li>C++</li><li>C#</li><li>Java</li><li>Python</li><li>Assembly</li><li>JavaScript</li><li>TypeScript</li>
             </ul>
@@ -154,15 +161,15 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Bases de Dados</h3>
+            <h3 data-i18n="skills.databases">Bases de Dados</h3>
             <ul class="chips">
               <li>SQL</li><li>NoSQL</li><li>MongoDB</li><li>Microsoft SQL</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Engenharia de Software</h3>
+            <h3 data-i18n="skills.engineering">Engenharia de Software</h3>
             <ul class="chips">
-              <li>Programação OOP</li><li>UML</li>
+              <li data-i18n="skills.oop">Programação OOP</li><li>UML</li>
             </ul>
           </div>
         </div>
@@ -174,14 +181,14 @@
 
     <section id="education" class="section">
       <div class="container">
-        <div class="section-head"><h2 class="pill">Formação</h2></div>
+        <div class="section-head"><h2 class="pill" data-i18n="education.title">Formação</h2></div>
         <div class="edu-grid">
           <article class="edu-card">
             <img src="images/background-image/feup.jpg" alt="FEUP" loading="lazy">
             <div class="edu-body">
-              <span class="date-chip">2021 - Presente</span>
-              <h3>Universidade do Porto, Faculdade de Engenharia</h3>
-              <p>Licenciatura em Engenharia Informática</p>
+              <span class="date-chip" data-i18n="education.feup.date">2021 - Presente</span>
+              <h3 data-i18n="education.feup.name">Universidade do Porto, Faculdade de Engenharia</h3>
+              <p data-i18n="education.feup.degree">Licenciatura em Engenharia Informática</p>
             </div>
           </article>
           <article class="edu-card">
@@ -189,7 +196,7 @@
             <div class="edu-body">
               <span class="date-chip">2018 - 2021</span>
               <h3>Colégio da Trofa</h3>
-              <p>Ensino Secundário no curso de Ciências e Tecnologias</p>
+              <p data-i18n="education.school.degree">Ensino Secundário no curso de Ciências e Tecnologias</p>
             </div>
           </article>
         </div>
@@ -201,36 +208,36 @@
 
     <section id="projects" class="section">
       <div class="container">
-        <div class="section-head"><h2 class="pill">Alguns projetos</h2></div>
+        <div class="section-head"><h2 class="pill" data-i18n="projects.title">Alguns projetos</h2></div>
         <div class="project-grid">
           <article class="project-card">
             <span class="project-number">01</span>
-            <h3>Registos de Problemas</h3>
-            <p>Desenvolver um site para otimizar e gerir eficazmente registos de problemas.</p>
+            <h3 data-i18n="projects.p1.title">Registos de Problemas</h3>
+            <p data-i18n="projects.p1.text">Desenvolver um site para otimizar e gerir eficazmente registos de problemas.</p>
             <ul class="chips chips-small"><li>SQLite</li><li>HTML</li><li>CSS</li><li>PHP</li><li>JavaScript</li><li>Ajax</li></ul>
           </article>
           <article class="project-card">
             <span class="project-number">02</span>
-            <h3>Base de Dados</h3>
-            <p>Criação e consulta de uma base de dados sobre campeonatos de hóquei em patins.</p>
+            <h3 data-i18n="projects.p2.title">Base de Dados</h3>
+            <p data-i18n="projects.p2.text">Criação e consulta de uma base de dados sobre campeonatos de hóquei em patins.</p>
             <ul class="chips chips-small"><li>UML</li><li>SQL</li><li>SQLite</li></ul>
           </article>
           <article class="project-card">
             <span class="project-number">03</span>
-            <h3>Horários de Estudantes</h3>
-            <p>Desenvolver um sistema capaz de ajudar na gestão de horários após a sua criação (modificação, visualização, ...).</p>
-            <ul class="chips chips-small"><li>C++</li><li>Programação Orientada a Objetos</li><li>Doxygen</li></ul>
+            <h3 data-i18n="projects.p3.title">Horários de Estudantes</h3>
+            <p data-i18n="projects.p3.text">Desenvolver um sistema capaz de ajudar na gestão de horários após a sua criação (modificação, visualização, ...).</p>
+            <ul class="chips chips-small"><li>C++</li><li data-i18n="projects.p3.oop">Programação Orientada a Objetos</li><li>Doxygen</li></ul>
           </article>
           <article class="project-card">
             <span class="project-number">04</span>
-            <h3>Programação em UNIX</h3>
-            <p>Resolução de exercícios de programação em UNIX em grupo.</p>
-            <ul class="chips chips-small"><li>Programação de sistemas (API UNIX/LINUX)</li></ul>
+            <h3 data-i18n="projects.p4.title">Programação em UNIX</h3>
+            <p data-i18n="projects.p4.text">Resolução de exercícios de programação em UNIX em grupo.</p>
+            <ul class="chips chips-small"><li data-i18n="projects.p4.tech">Programação de sistemas (API UNIX/LINUX)</li></ul>
           </article>
           <article class="project-card">
             <span class="project-number">05</span>
-            <h3>Imagens a Cores RGB</h3>
-            <p>Representar e processar imagens a cores RGB com 8 bits por canal RGB.</p>
+            <h3 data-i18n="projects.p5.title">Imagens a Cores RGB</h3>
+            <p data-i18n="projects.p5.text">Representar e processar imagens a cores RGB com 8 bits por canal RGB.</p>
             <ul class="chips chips-small"><li>C++</li></ul>
           </article>
         </div>
@@ -242,8 +249,8 @@
 
     <section id="contact" class="section">
       <div class="container">
-        <div class="section-head"><h2 class="pill">Contactos</h2></div>
-        <p class="contact-lead">Tens um projeto ou queres saber mais sobre o meu trabalho? Fala comigo.</p>
+        <div class="section-head"><h2 class="pill" data-i18n="contact.title">Contactos</h2></div>
+        <p class="contact-lead" data-i18n="contact.lead">Tens um projeto ou queres saber mais sobre o meu trabalho? Fala comigo.</p>
         <div class="contact-grid">
           <a class="contact-card" href="mailto:mariabeatrizcarneiro2003@gmail.com">
             <img src="svg/contact-svg/email.svg" alt="" aria-hidden="true">
@@ -268,11 +275,12 @@
     </main>
 
     <footer id="footer">
-      <p>Copyright &copy; <span id="year">2026</span> Maria Beatriz Carneiro - Todos os direitos reservados.</p>
+      <p data-i18n="footer.text">Copyright &copy; <span id="year">2026</span> Maria Beatriz Carneiro - Todos os direitos reservados.</p>
     </footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script defer src="script.js"></script>
+    <script defer src="i18n.js"></script>
     <script defer src="cv.js"></script>
 </body>
 </html>
