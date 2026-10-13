@@ -37,10 +37,11 @@
     <!-- Nav Bar -->
     
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+      <div class="menu-toggle">☰ Menu</div>
       <ul class="nav-list">
         <li><a href="#header">Início</a></li>
         <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#experience">Experiência</a></li>
         <li><a href="#codeskills">Competências</a></li>
         <li><a href="#education">Formação</a></li>
         <li><a href="#projects">Projetos</a></li>
@@ -58,111 +59,139 @@
         </div>
         <div class="glass-card-content">
           <h1>Maria Beatriz Carneiro</h1>
-          <h3>Estudante</h3>
-          <a href="files/CV_BeatrizCarneiro.pdf" target=”_blank”>Curriculum Vitae</a>
+          <div class="cv-dropdown">
+            <button type="button" class="cv-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="cv-menu">
+              Curriculum Vitae <span class="cv-arrow" aria-hidden="true"></span>
+            </button>
+            <ul id="cv-menu" class="cv-menu" hidden>
+              <li><a href="#" data-cv-lang="pt">Português</a></li>
+              <li><a href="#" data-cv-lang="en">English</a></li>
+            </ul>
+          </div>
         </div>      
       </div>
     </header>
 
+    <main>
+
     <!-- About -->
 
-    <section id="about">
-        <div class="grid">
-            <div class="content item1">
-                <h1>Sobre Mim</h1>
-                <p>Tenho <span id="age">23</span> anos e atualmente estou a tirar uma licenciatura em Engenharia Informática e Computação na Faculdade de Engenharia da Universidade do Porto. <br> Estou entusiasmada para aplicar as minhas habilidades e conhecimentos num contexto profissional. Procuro uma oportunidade desafiadora para adquirir experiência prática e contribuir para uma equipa dinâmica, ao mesmo tempo que aprimoro ainda mais a minha especialização na área.</p> 
-            </div>
-            <div class="card item2">
-                <h3>Estudante entusiasta</h3>
-            </div>
-            <div class="card item3"></div>
-            <div class="card item4"></div>
-            <div class="card item5">
-                    <h3>Apaixonada por tecnologia</h3>
-            </div>
-            <div class="card item7"></div>
-            <div class="card item8">
-                    <h3>Compromisso com excelência</h3>
-            </div>
-            <div class="card item9"></div>
-            <div class="card item10"></div>
-            <div class="card item11">
-                <h3>Aprendiz incansável</h3>
-            </div>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head"><h2 class="pill">Sobre mim</h2></div>
+        <div class="about-layout">
+          <div class="about-text">
+            <p>Sou a Beatriz, tenho <span id="age">23</span> anos e atualmente divido o meu tempo entre três papéis: CEO &amp; Founder da Bitwise Lab, Formadora de Programação na Fundação Aga Khan e estudante de Engenharia Informática e Computação na Faculdade de Engenharia da Universidade do Porto.</p>
+            <ul class="chips chips-light">
+              <li>Estudante entusiasta</li>
+              <li>Apaixonada por tecnologia</li>
+              <li>Compromisso com excelência</li>
+              <li>Aprendiz incansável</li>
+            </ul>
           </div>
+          <dl class="facts">
+            <div><dt>Localização</dt><dd>Porto, Portugal</dd></div>
+            <div><dt>Línguas</dt><dd>Português e inglês (fluente)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Experience -->
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head"><h2 class="pill">Experiência</h2></div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-date">2024 - Presente</span>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div class="timeline-text">
+                  <h3>CEO &amp; Founder</h3>
+                  <p class="org"><a href="https://bitwiselab.net" target="_blank" rel="noopener">Bitwise Lab</a> · <a href="https://boardmeeting.app" target="_blank" rel="noopener">BoardMeeting.app</a></p>
+                  <p>Empresa de desenvolvimento de software especializada em aplicações móveis e web.<br>Desenvolvemos a BoardMeeting, uma aplicação de gestão de reuniões com IA e Blockchain.</p>
+                </div>
+                <a class="timeline-logo-link" href="https://bitwiselab.net" target="_blank" rel="noopener" aria-label="Bitwise Lab (bitwiselab.net)"><img class="timeline-logo" src="images/logos/bitwise-lab.png" alt="Logótipo da Bitwise Lab"></a>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-date">2025 - Presente</span>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div class="timeline-text">
+                  <h3>Formadora de Programação</h3>
+                  <p class="org"><a href="https://the.akdn/pt/recursos-e-media/recursos/publica%C3%A7%C3%A3o/funda%C3%A7%C3%A3o-aga-khan-portugal" target="_blank" rel="noopener">Fundação Aga Khan Portugal</a> · <a href="https://bytes4future.pt" target="_blank" rel="noopener">Projeto Bytes4Future</a></p>
+                  <p>Formadora de cursos como Full Stack Developer e Data Analyst, entre outros,<br>a ajudar pessoas a iniciarem a sua carreira na tecnologia.</p>
+                </div>
+                <a class="timeline-logo-link" href="https://the.akdn/pt/recursos-e-media/recursos/publica%C3%A7%C3%A3o/funda%C3%A7%C3%A3o-aga-khan-portugal" target="_blank" rel="noopener" aria-label="Fundação Aga Khan Portugal"><img class="timeline-logo timeline-logo-tall" src="images/logos/fundacao-aga-khan.svg" alt="Logótipo da Fundação Aga Khan Portugal"></a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
 
     <!-- Code Skills -->
 
-    <section id="codeskills">
-      <h1>Competências em Programação</h1>
-      <ol>
-          <li>
-              <div class="title">C++</div>
-          </li>
-          <li>
-              <div class="title">C</div>
-          </li>
-          <li>
-              <div class="title">C#</div>
-          </li>
-          <li>
-              <div class="title">Python</div>
-          </li>
-          <li>
-              <div class="title">Java</div>
-          </li>
-          <li>
-              <div class="title">HTML</div>
-          </li>
-          <li>
-            <div class="title">CSS</div>
-          </li>
-          <li>
-            <div class="title">JavaScript</div>
-          </li>
-          <li>
-            <div class="title">Programação OOP</div>
-          </li>
-          <li>
-            <div class="title">SQL</div>
-          </li>
-          <li>
-            <div class="title">Base de Dados</div>
-          </li>
-          <li>
-            <div class="title">UML</div>
-          </li>
-          <li>
-            <div class="title">Desenvolvimento de Software</div>
-          </li>
-      </ol>
-  </section>
+    <section id="codeskills" class="section section-dark">
+      <div class="container">
+        <h2 class="skills-title">Competências em Programação</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Linguagens</h3>
+            <ul class="chips">
+              <li>C</li><li>C++</li><li>C#</li><li>Java</li><li>Python</li><li>Assembly</li><li>JavaScript</li><li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>React</li><li>NextJs</li><li>NodeJs</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Bases de Dados</h3>
+            <ul class="chips">
+              <li>SQL</li><li>NoSQL</li><li>MongoDB</li><li>Microsoft SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Engenharia de Software</h3>
+            <ul class="chips">
+              <li>Programação OOP</li><li>UML</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- Education -->
 
-    <section id="education">
-      <h1>Formação</h1>
-      <div class="grid">
-        <div class="grid-item pop">
-          <div class="card"><img class="card-img" src="images/background-image/feup.jpg" alt="FEUP">
-            <div class="card-content">
-              <h2>Universidade do Porto Faculdade de Engenharia</h2>
-              <h4>Licenciatura em Engenharia Informática</h4>
-              <h4>2021 - Presente</h4>
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head"><h2 class="pill">Formação</h2></div>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <img src="images/background-image/feup.jpg" alt="FEUP" loading="lazy">
+            <div class="edu-body">
+              <span class="date-chip">2021 - Presente</span>
+              <h3>Universidade do Porto, Faculdade de Engenharia</h3>
+              <p>Licenciatura em Engenharia Informática</p>
             </div>
-          </div>
-        </div>
-        <div class="grid-item pop">
-          <div class="card"><img class="card-img" src="images/background-image/colegio.jpg" alt="Colégio da Trofa">
-            <div class="card-content">
-              <h2>Colégio da Trofa</h2>
-              <h4>Ensino Secundário no curso de Ciências e Tecnologias</h4>
-              <h4>2018 - 2021</h4>
+          </article>
+          <article class="edu-card">
+            <img src="images/background-image/colegio.jpg" alt="Colégio da Trofa" loading="lazy">
+            <div class="edu-body">
+              <span class="date-chip">2018 - 2021</span>
+              <h3>Colégio da Trofa</h3>
+              <p>Ensino Secundário no curso de Ciências e Tecnologias</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -170,96 +199,80 @@
 
     <!-- Projects -->
 
-    <section id="projects">
-      <h1>Alguns Projetos</h1>
-        <div class="container">
-            <div class="card">
-              <div class="box">
-                <div class="content">
-                  <h2>1</h2>
-                  <h3>Registos de Problemas</h3>
-                  <p><strong>Objetivo: </strong><br>Desenvolver um site para otimizar e gerir eficazmente registos de problemas.</p>
-                  <p><strong>Tecnologias Utilizadas: </strong><br>SQLite, HTML, CSS, PHP, JavaScript, Ajax</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="box">
-                <div class="content">
-                  <h2>2</h2>
-                  <h3>Base de Dados</h3>
-                  <p><strong>Objetivo: </strong><br>Criação e consulta de uma base de dados sobre campeonatos de hóquei em patins.</p>
-                  <p><strong>Tecnologias Utilizadas: </strong><br>UML, SQL, SQLite</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="box">
-                <div class="content">
-                  <h2>3</h2>
-                  <h3>Horários de Estudantes</h3>
-                  <p><strong>Objetivo: </strong><br>Desenvolver um sistema capaz de ajudar na gestão de horários após a sua criação (modificação, visualização, ...).</p>
-                  <p><strong>Tecnologias Utilizadas: </strong><br>C++, Programação Orientada a Objetos, Doxygen</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="box">
-                <div class="content">
-                  <h2>4</h2>
-                  <h3>Programação em UNIX</h3>
-                  <p><strong>Objetivo: </strong><br>Resolução de exercícios de programação em UNIX em grupo.</p>
-                  <p><strong>Tecnologias Utilizadas: </strong><br>Programação de sistemas (API UNIX/LINUX)</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="box">
-                <div class="content">
-                  <h2>5</h2>
-                  <h3>Imagens a Cores RGB</h3>
-                  <p><strong>Objetivo: </strong><br>Representar e processar imagens a cores RGB com 8 bits por canal RGB.</p>
-                  <p><strong>Tecnologias Utilizadas: </strong><br>C++</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-
-
-    <!-- Contact Form -->
-    
-    <section id="contact" class="contact-section">
-      <h1>Contactos</h1>
-  
-      <div class="social-buttons">
-        <a href="mailto:mariabeatrizcarneiro2003@gmail.com"><img class="pop" src="svg/contact-svg/email.svg" alt="email svg"></a>
-          <a href="https://www.linkedin.com/in/maria-beatriz-carneiro-383106232/" target="_blank"><img class="pop" src="svg/contact-svg/linkedin.svg" alt="linkedin svg"></a>
-          <a href="https://github.com/MariaBeatrizCarneiro" target="_blank"><img class="pop" src="svg/contact-svg/github.svg" alt="github svg"></a>
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head"><h2 class="pill">Alguns projetos</h2></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-number">01</span>
+            <h3>Registos de Problemas</h3>
+            <p>Desenvolver um site para otimizar e gerir eficazmente registos de problemas.</p>
+            <ul class="chips chips-small"><li>SQLite</li><li>HTML</li><li>CSS</li><li>PHP</li><li>JavaScript</li><li>Ajax</li></ul>
+          </article>
+          <article class="project-card">
+            <span class="project-number">02</span>
+            <h3>Base de Dados</h3>
+            <p>Criação e consulta de uma base de dados sobre campeonatos de hóquei em patins.</p>
+            <ul class="chips chips-small"><li>UML</li><li>SQL</li><li>SQLite</li></ul>
+          </article>
+          <article class="project-card">
+            <span class="project-number">03</span>
+            <h3>Horários de Estudantes</h3>
+            <p>Desenvolver um sistema capaz de ajudar na gestão de horários após a sua criação (modificação, visualização, ...).</p>
+            <ul class="chips chips-small"><li>C++</li><li>Programação Orientada a Objetos</li><li>Doxygen</li></ul>
+          </article>
+          <article class="project-card">
+            <span class="project-number">04</span>
+            <h3>Programação em UNIX</h3>
+            <p>Resolução de exercícios de programação em UNIX em grupo.</p>
+            <ul class="chips chips-small"><li>Programação de sistemas (API UNIX/LINUX)</li></ul>
+          </article>
+          <article class="project-card">
+            <span class="project-number">05</span>
+            <h3>Imagens a Cores RGB</h3>
+            <p>Representar e processar imagens a cores RGB com 8 bits por canal RGB.</p>
+            <ul class="chips chips-small"><li>C++</li></ul>
+          </article>
+        </div>
       </div>
-  
-      <form>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Nome:" required>
-  
-          <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Email:" required>
-  
-          <label for="message"></label>
-          <textarea id="message" name="message" rows="4" placeholder="Mensagem:" required></textarea>
-  
-          <input class="submit-btn" type="submit" value="Enviar">
-      </form>
     </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head"><h2 class="pill">Contactos</h2></div>
+        <p class="contact-lead">Tens um projeto ou queres saber mais sobre o meu trabalho? Fala comigo.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:mariabeatrizcarneiro2003@gmail.com">
+            <img src="svg/contact-svg/email.svg" alt="" aria-hidden="true">
+            <span>Email</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/maria-beatriz-carneiro-383106232/" target="_blank" rel="noopener">
+            <img src="svg/contact-svg/linkedin.svg" alt="" aria-hidden="true">
+            <span>LinkedIn</span>
+          </a>
+          <a class="contact-card" href="https://github.com/MariaBeatrizCarneiro" target="_blank" rel="noopener">
+            <img src="svg/contact-svg/github.svg" alt="" aria-hidden="true">
+            <span>GitHub</span>
+          </a>
+          <a class="contact-card" href="https://bitwiselab.net" target="_blank" rel="noopener">
+            <svg viewBox="-3 -4 30 30" fill="none" stroke="#050a2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            <span>Bitwise Lab</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </main>
 
     <footer id="footer">
       <p>Copyright &copy; <span id="year">2026</span> Maria Beatriz Carneiro - Todos os direitos reservados.</p>
     </footer>
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script defer src="script.js"></script>
+    <script defer src="cv.js"></script>
 </body>
 </html>
